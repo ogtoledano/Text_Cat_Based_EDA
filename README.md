@@ -1,6 +1,6 @@
 # Text Categorization Based on EDA algorithms
 
-This is a project that allows text categorization for documents in English and Spanish. It is based on a deep neural architecture using Convolutional Neural Networks, and word embedding (GloVE) as a vector word representation model. The neural network is trained by applying gradient-based methods, such as SGD and Adam, and combines the training with a new hybrid learning strategy based on Estimation Distribution Algorithms (EDA). The EDAs implemented, with which training can be combined, are: Univariate Marginal Distribution Algorithm for countinuos domain (UMDAc), Estimation of Multivariate Normal Algorithm (EMNA) and Covariance Matrix Adaptation - Evolutionary Strategy (CMA-ES).
+This is a project that allows text categorization for English and Spanish documents. It is based on a deep neural architecture using Convolutional Neural Networks, and word embedding (GloVE) as word vector representation. The neural network is trained by applying gradient-based methods (SGD and Adam), and combines the training with a new hybrid learning strategy via Estimation Distribution Algorithms (EDA). Includes three evolutionary strategies such Univariate Marginal Distribution Algorithm for countinuos domain (UMDAc), Estimation of Multivariate Normal Algorithm (EMNA) and Covariance Matrix Adaptation - Evolutionary Strategy (CMA-ES).
 
 *********** update at April 18, 2021 *************
 
