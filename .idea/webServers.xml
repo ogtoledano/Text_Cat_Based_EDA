@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f29d5d69-c909-4605-baef-5f81e6368c8a" name="HPC_Fac_CITEC_CUDA" url="http://10.1.6.70">
+        <fileTransfer host="10.1.6.70" port="22" rootFolder="/home/ogtoledano" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

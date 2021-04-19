@@ -1,0 +1,14 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="scripts.main_eda_cumda.main_gradient_based" />
+          <option value="scripts.main_eda_emna.*" />
+          <option value="scripts.main_gradient_based.GS_BEST_MODEL" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
