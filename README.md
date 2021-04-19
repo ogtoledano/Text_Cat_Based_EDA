@@ -26,6 +26,8 @@ We use two word embedding (English, Spanish) pre-trained GloVe (Jeffrey Penningt
 + English GloVe with 6 Billions words and 100 dimension vector. Pre-trained model is available at [here](http://nlp.stanford.edu/data/glove.6B.zip)
 + Spanish Glove with 1.4 Billions words and 300 dimension vector. Pre-trained model is available at [here](http://dcc.uchile.cl/~jperez/word-embeddings/glove-sbwc.i25.vec.gz)
 
+Download pre-trained models and put them into `utils/pretrained_models` folder 
+
 ## Datasets
 
 + BBC Sport (Derek Greene and Pádraig Cunningham, 2006). Data is available at [here](http://mlg.ucd.ie/files/datasets/bbc-fulltext.zip)
