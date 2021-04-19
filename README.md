@@ -15,7 +15,7 @@ In order to run this project you will need a working installation of:
 + numpy
 + nltk
 
-For load pre-trained models, Dataloaders, hyper-parameters tuning, CNN training and testing, you will need:
+For loading pre-trained models, Dataloaders, hyper-parameters tuning, CNN training and testing, you will need:
 + torch == 1.2.0+cu92
 + skorch == 0.9.0
 
