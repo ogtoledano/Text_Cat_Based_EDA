@@ -30,9 +30,13 @@ Download pre-trained models and put them into `utils/pretrained_models` folder
 
 ## Datasets
 
+### English:
 + BBC Sport (Derek Greene and Pádraig Cunningham, 2006). Data is available at [here](http://mlg.ucd.ie/files/datasets/bbc-fulltext.zip)
 + BBC News (Derek Greene and Pádraig Cunningham, 2006). Data is available at [here](http://mlg.ucd.ie/files/datasets/bbcsport-fulltext.zip)
 + Youtube+Spam+Collection (Tulio C. Alberto et. al, 2016). Data is available at [here](https://archive.ics.uci.edu/ml/datasets/YouTube+Spam+Collection)
+
+### Spanish:
++ Ecured_Five_Tags (O.G. Toledano-López et. al, 2021). Data is available at [here](https://drive.google.com/file/d/1FAq7bUiT9X9tRPgfoalPaZAubwv1P3uV/view?usp=sharing)
 
 ## scripts/arguments.txt file
 
