@@ -8,25 +8,18 @@
 # stop_words and discretize each word form dictionary
 #------------------------------------------------------------------------------+
 
-import sys
 import os
-import torch
-import nltk
 import sys
 from html.parser import HTMLParser
 
+import nltk
+import torch
 
 sys.path.append('..\\..\\Text_Cat_Based_EDA')
 sys.path.append('..\\..\\Text_Cat_Based_EDA\\utils')
-from utils.embedding_builder import build_word_embedding,build_tensor
 from nltk.corpus import stopwords
-from utils.custom_dataloader import VectorsDataloader
-from torch.utils.data import DataLoader
 from utils.logging_custom import make_logger
-from sklearn.datasets import fetch_20newsgroups,fetch_20newsgroups_vectorized
-import pandas as pd
 from sklearn.model_selection import train_test_split
-from random import sample
 
 MAX_LEN_SENTENCE=0
 
@@ -74,6 +67,19 @@ def removing_stop_words(texts):
         texts[i] = ' '.join(sentence)
 
 
+def stop_words_count_and_length(texts):
+    # Counting stop words
+    stop_words = set(stopwords.words('spanish'))
+    count_sw=0
+    total_length=0
+    for i, text in enumerate(texts):
+        tokens = nltk.word_tokenize(text)
+        total_length+=len(tokens)
+        for word in tokens:
+            if word in stop_words:
+                count_sw += 1
+    return total_length,count_sw
+
 def parse_documents_from_html_format(text_html):
     parser=MyHTMLParser()
     parser.feed(text_html)
@@ -92,12 +98,17 @@ def build_dataset_and_dict():
     for i, label in enumerate(labels):
         folder = path_dataset + "/" + label
         for file in os.listdir(folder):
+            total_text=[]
             f = open(folder + "/" + file, "r",encoding='UTF-8')
             text = f.read()
             parse=parse_documents_from_html_format(text)
             for pattern in parse.data:
                 X.append(pattern)
+                total_text.append(pattern)
                 y.append(i)
+        total_length, count_sw=stop_words_count_and_length(total_text)
+        print("Found tokens: {} for label: {}, and count stop-words {}".format(total_length, label,count_sw))
+        total_text=[]
 
     X_train, X_test, y_train,y_test=train_test_split(X, y, test_size=0.30, random_state=142)
     bbc_train={'data':X_train,'target':y_train}
