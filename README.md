@@ -1,6 +1,6 @@
 # SiGEDA: Text Categorization Based on EDA algorithms
 
-This is a project that allows text categorization for English and Spanish documents. It is based on a deep neural architecture using Convolutional Neural Networks, and word embedding (GloVE) as word vector representation. The neural network is trained by applying gradient-based methods (SGD and Adam), and combines the training with a new hybrid learning strategy via Estimation Distribution Algorithms (EDA). Includes three evolutionary strategies such Univariate Marginal Distribution Algorithm for countinuos domain (UMDAc), Estimation of Multivariate Normal Algorithm (EMNA) and Covariance Matrix Adaptation - Evolutionary Strategy (CMA-ES).
+This is a project that allows text categorization for English and Spanish documents. It is based on a deep neural architecture using Convolutional Neural Networks, and word embedding (GloVE) as word vector representation. The neural network is trained by applying gradient-based methods (SGD and Adam), and combines the training with a new hybrid learning strategy via Estimation of Distribution Algorithms (EDA). Includes three evolutionary strategies such Univariate Marginal Distribution Algorithm for countinuos domain (UMDAc), Estimation of Multivariate Normal Algorithm (EMNA) and Covariance Matrix Adaptation - Evolutionary Strategy (CMA-ES).
 
 *********** update at April 18, 2021 *************
 
