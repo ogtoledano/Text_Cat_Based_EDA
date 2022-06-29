@@ -39,7 +39,7 @@ class ModelCNN(nn.Module):
         out.transpose_(1,2)
         out=self.convnet(out)
         out=out.view(x.size(0),-1)
-        # self.fc.float() #Only use in CUDA
+        self.fc.float() #Only use in CUDA
         out=self.fc(out)
         # out = self.dropout(self.fc(out))
         return out

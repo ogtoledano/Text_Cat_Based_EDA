@@ -24,7 +24,7 @@ wilcoxon_non_parametric_test(g,h)
 
 # Plot results
 
-plt.boxplot([a,h,b],labels=["Adam","Our 3", "Our 4"])
+plt.boxplot([a,h,b],labels=["Adam","Variant 3", "Variant 4"])
 plt.title('Comparison of measurements for the BBCN dataset')
 plt.ylabel("Accuracy")
 plt.savefig('bbcnewsAdam.eps', format='eps')
@@ -53,7 +53,7 @@ wilcoxon_non_parametric_test(e,f)
 
 # Plot results
 
-plt.boxplot([c,f,d],labels=["SGD","Our 1", "Our 2"])
+plt.boxplot([c,f,d],labels=["SGD","Variant 1", "Variant 2"])
 plt.title('Comparison of measurements for the BBCN dataset')
 plt.ylabel("Accuracy")
 plt.savefig('bbcnewsSGD.eps', format='eps')

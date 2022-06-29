@@ -46,13 +46,13 @@ h=np.asarray(sgd_emna)
 wilcoxon_non_parametric_test(g,h)
 
 
-plt.boxplot([a,b,d],labels=["Adam", "Our 3","Our 4"])
+plt.boxplot([a,b,d],labels=["Adam", "Variant 3","Variant 4"])
 plt.title('Comparison of measurements for the BBCS dataset')
 plt.ylabel("Accuracy")
 plt.savefig('bbcsportAdam.eps', format='eps')
 plt.show()
 
-plt.boxplot([e,f,h],labels=["SGD", "Our 1","Our 2"])
+plt.boxplot([e,f,h],labels=["SGD", "Variant 1","Variant 2"])
 plt.title('Comparison of measurements for the BBCS dataset')
 plt.ylabel("Accuracy")
 plt.savefig('bbcsportSGD.eps', format='eps')

@@ -118,7 +118,7 @@ def build_dataset_and_dict():
     labels_target = bbc_train['target']
 
     log_exp_run = make_logger()
-
+    log_exp_run.experiments("YSC")
     log_exp_run.experiments("Number of instances for training: ")
     log_exp_run.experiments(len(bbc_train['data']))
     log_exp_run.experiments("Number of instances for testing: ")

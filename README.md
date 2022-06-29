@@ -4,6 +4,13 @@ This is a project that allows text categorization for English and Spanish docume
 
 *********** update at April 18, 2021 *************
 
+## Publications
+
+This repository is part of the research papers:
+
++ Toledano-López, O.G., Madera, J., González, H., Cuevas, A.S. (2021). Covariance Matrix Adaptation Evolution Strategy for Convolutional Neural Network in Text Classification. In: Progress in Artificial Intelligence and Pattern Recognition. IWAIPR 2021. Lecture Notes in Computer Science(), vol 13055. Springer, Cham. https://doi.org/10.1007/978-3-030-89691-1_8 
++ Toledano-López, O.G., Madera, J., González, H., Cuevas, A.S. (2022). A hybrid method based on estimation of distribution algorithms to train convolutional neural networks for text categorization. In Pattern Recognition Letters, Volume 160, Pages 105-111. ISSN 0167-8655. https://doi.org/10.1016/j.patrec.2022.06.008.
+
 ## Requirements
 
 In order to run this project you will need a working installation of:
